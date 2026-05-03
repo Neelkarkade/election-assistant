@@ -1,48 +1,64 @@
-# Smart AI Assistant
+# 🧠 Election Assistant Chatbot
 
-## Overview
-This project is a smart assistant that helps users plan tasks, manage health, and improve productivity.
+## 📌 Project Description
 
-## Features
-- Task planning
-- Health suggestions
-- AI-like responses
-- Interactive UI with predefined test inputs
+This is a rule-based chatbot built using Spring Boot. It processes user input using keyword matching and returns structured responses without relying on external AI APIs.
 
-## Tech Stack
+The application helps users understand the election process, eligibility, and voting steps in a simple and interactive way.
+
+---
+
+## 🚀 Features
+
+- Chatbot-style UI (ChatGPT-like interface)
+- Handles election-related queries
+- Provides voting steps
+- Displays election timeline
+- Checks eligibility criteria
+- Fast and lightweight (no external API required)
+
+---
+
+## 🧪 How to Use
+
+Try asking:
+
+- vote
+- voting
+- timeline
+- eligibility
+- age
+- hello
+
+---
+
+## 🛠 Tech Stack
+
 - Java
 - Spring Boot
+- REST APIs
 - HTML, CSS, JavaScript
 
-## How it works
-User enters input → Frontend calls API → Backend processes logic → Response shown on UI
+---
 
-## Test Scenarios
+## ▶️ Run Locally
 
-### Planner API
-- I have meeting and coding work
-- I feel tired
-- I have deadline today
+mvn clean install  
+mvn spring-boot:run  
 
-### Health API
-- headache
-- stress
-- tired
+Open in browser:  
+http://localhost:8080/election.html  
 
-### AI Assistant
-- Plan my day
-- I want to study
-- I have meeting
-- I need productivity tips
+---
 
-## Screenshots
+## 🌐 Future Improvements
 
-![UI](screenshot1.png)
-![Plan Output](screenshot2.png)
-![AI Output](screenshot3.png)
+- Add AI integration (Gemini/OpenAI)
+- Store chat history using database
+- Deploy on cloud (Render)
 
-## Run
-http://localhost:8080
+---
 
-## Note
-This project uses AI-like decision logic based on rule-based conditions to provide context-aware responses.
+## 👨‍💻 Author
+
+Developed as part of hackathon / learning project.
