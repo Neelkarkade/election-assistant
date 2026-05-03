@@ -1,12 +1,9 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk
 
 WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
-
-EXPOSE 8080
+RUN chmod +x mvnw && ./mvnw clean package
 
 CMD ["java", "-jar", "target/*.jar"]
